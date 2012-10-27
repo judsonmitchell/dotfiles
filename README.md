@@ -1,4 +1,4 @@
-#Here are my dotfiles
+#My dotfiles for Vim
 
 I put this repo together following [Michael Smalley's method](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/).
 
