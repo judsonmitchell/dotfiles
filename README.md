@@ -8,6 +8,8 @@ To install these, run:
     cd ~/dotfiles
     chmod +x makesymlinks.sh
     ./makesymlinks.sh
+    git submodule init
+    git submodule update
 
 My vim is configured with:
 
