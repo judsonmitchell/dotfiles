@@ -1,6 +1,6 @@
 set nocompatible 
 call pathogen#infect()
-
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 syntax on
 set number
 set ic
