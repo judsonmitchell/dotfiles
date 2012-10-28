@@ -1,8 +1,20 @@
 set nocompatible 
-call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+filetype off
 syntax on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'pope/vim-fugitive.git'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic.git'
+Bundle 'c9s/gsession.vim.git'
+Bundle 'pope/vim-markdown.git'
+Bundle 'ervandew/supertab'
+Bundle 'msanders/snipmate.vim'
+
 set number
 set ic
 set hls
