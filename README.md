@@ -8,12 +8,10 @@ To install these, run:
     cd ~/dotfiles
     chmod +x makesymlinks.sh
     ./makesymlinks.sh
-    git submodule init
-    git submodule update
-
+    
 My vim is configured with:
 
-* [Pathogen](https://github.com/tpope/vim-pathogen)
+* [Vundle](https://github.com/gmarik/vundle)
 * [Ctrl-P](https://github.com/kien/ctrlp.vim)
 * [Vim-Fugitive](https://github.com/tpope/vim-fugitive)
 * [Syntastic](https://github.com/scrooloose/syntastic)
