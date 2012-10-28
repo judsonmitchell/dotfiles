@@ -7,7 +7,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-Bundle 'pope/vim-fugitive.git'
+Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'c9s/gsession.vim.git'
