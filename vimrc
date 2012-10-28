@@ -25,8 +25,8 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab
 
-filetype indent on
-filetype plugin on
+"filetype indent on
+"filetype plugin on
 
 set foldmethod=syntax
 set nofoldenable 
@@ -57,5 +57,4 @@ let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
   \ }
 
-"Note I'm using gsession.vim for auto sessions
-"See https://github.com/c9s/gsession.vim
+
