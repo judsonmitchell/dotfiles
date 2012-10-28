@@ -11,7 +11,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'c9s/gsession.vim.git'
-Bundle 'pope/vim-markdown.git'
+Bundle 'tpope/vim-markdown.git'
 Bundle 'ervandew/supertab'
 Bundle 'msanders/snipmate.vim'
 
