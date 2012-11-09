@@ -14,6 +14,7 @@ Bundle 'c9s/gsession.vim.git'
 Bundle 'tpope/vim-markdown.git'
 Bundle 'ervandew/supertab'
 Bundle 'msanders/snipmate.vim'
+Bundle 'ricardovaleriano/vim-github-theme.git'
 
 set number
 set ic
