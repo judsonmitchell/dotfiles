@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/var/www/cc7'
-let g:netrw_dirhist_2='/var/www/cc7/2c90054c123fcbc6feea'
-let g:netrw_dirhist_3='/var/www/cc7/cliniccases'
-let g:netrw_dirhist_4='/var/www/cc7/2c90054c123fcbc6feea'
-let g:netrw_dirhist_5='/var/www/cc7'
-let g:netrw_dirhist_6='/var/www/cc7/cliniccases'
-let g:netrw_dirhist_7='/home/judson/dotfiles/vim/bundle/ctrlp.vim'
-let g:netrw_dirhist_8='/home/judson/dotfiles'
-let g:netrw_dirhist_9='/home/judson'
+let g:netrw_dirhist_2='/var/www/cc7/cliniccases'
+let g:netrw_dirhist_3='/var/www/cc7/cliniccases/lib'
+let g:netrw_dirhist_4='/var/www/cc7/cliniccases/lib/php'
+let g:netrw_dirhist_5='/var/www/cc7/cliniccases/lib/php/data'

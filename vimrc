@@ -1,11 +1,11 @@
-set nocompatible 
+set nocompatible
 filetype off
 syntax on
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
@@ -30,7 +30,7 @@ set expandtab
 "filetype plugin on
 
 set foldmethod=syntax
-set nofoldenable 
+set nofoldenable
 
 "Customize the status line to always show, and to
 "show the git (fugitive) status
@@ -39,7 +39,7 @@ set laststatus=2
 set statusline=%F\ %m\ %{fugitive#statusline()}\ %y%=%l,%c\ %P
 
 set t_Co=256
-colors zenburn 
+colors zenburn
 
 let g:SuperTabDefaultCompletionType = "context"
 
@@ -58,4 +58,9 @@ let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
   \ }
 
+"http://stevelosh.com/blog/2010/09/coming-home-to-vim/#making-vim-more-useful
+"Strip trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
+"Keep undo info after closing
+set undofile
