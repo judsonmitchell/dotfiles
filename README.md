@@ -16,4 +16,5 @@ My vim is configured with:
 * [Vim-Fugitive](https://github.com/tpope/vim-fugitive)
 * [Syntastic](https://github.com/scrooloose/syntastic)
 * [Gsession.vim](https://github.com/c9s/gsession.vim) 
+* [VimRoom](https://github.com/mikewest/vimroom)
 * Various syntax highlighters for php, js, markdown, etc

@@ -15,6 +15,7 @@ Bundle 'tpope/vim-markdown.git'
 Bundle 'ervandew/supertab'
 Bundle 'msanders/snipmate.vim'
 Bundle 'ricardovaleriano/vim-github-theme.git'
+Bundle 'mikewest/vimroom.git'
 
 set number
 set ic
