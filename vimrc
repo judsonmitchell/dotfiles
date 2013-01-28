@@ -65,3 +65,7 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 "Keep undo info after closing
 set undofile
+
+"Autosave session with gsession.vim
+let g:autosave_session = 1
+
