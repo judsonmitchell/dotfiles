@@ -49,7 +49,7 @@ set autoindent
 inoremap jj <ESC>
 
 "Alert for over 80 columns http://stackoverflow.com/a/235970/49359
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
+highlight OverLength ctermbg=gray ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 "Ensure controlp opens files in new tabs
