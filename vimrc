@@ -115,3 +115,7 @@ if exists("+showtabline")
     set showtabline=1
     highlight link TabNum Special
 endif
+
+" Markdown to HTML  
+" See http://net.tutsplus.com/tutorials/other/vim-essential-plugin-markdown-to-html/
+nmap <leader>md :%!/usr/bin/Markdown.pl --html4tags <cr>
