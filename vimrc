@@ -126,3 +126,13 @@ nmap <leader>md :%!/usr/bin/Markdown.pl --html4tags <cr>
 "Enable syntax highlighting of markdown files with.md extension http://stackoverflow.com/a/14779012/49359
 au BufRead,BufNewFile *.md set filetype=markdown
 
+"Change vim split window command to just ctrl-[direction]; better for ChromeOS terminal.
+"from: http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"Change split invocation command
+set splitbelow
+set splitright
