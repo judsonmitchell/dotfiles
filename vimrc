@@ -20,6 +20,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'ricardovaleriano/vim-github-theme.git'
 Bundle 'mikewest/vimroom.git'
 Bundle 'tpope/vim-surround'
+Bundle 'mileszs/ack.vim.git'
 
 set number
 set ic
