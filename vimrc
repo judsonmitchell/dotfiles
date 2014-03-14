@@ -21,6 +21,7 @@ Bundle 'ricardovaleriano/vim-github-theme.git'
 Bundle 'mikewest/vimroom.git'
 Bundle 'tpope/vim-surround'
 Bundle 'mileszs/ack.vim.git'
+Bundle 'ap/vim-css-color.git'
 
 set number
 set ic
