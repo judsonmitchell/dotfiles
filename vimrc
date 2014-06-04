@@ -22,6 +22,7 @@ Bundle 'mikewest/vimroom.git'
 Bundle 'tpope/vim-surround'
 Bundle 'mileszs/ack.vim.git'
 Bundle 'ap/vim-css-color.git'
+Bundle 'jelera/vim-javascript-syntax'
 
 set number
 set ic
@@ -36,7 +37,9 @@ set expandtab
 "filetype indent on
 "filetype plugin on
 
+
 set foldmethod=syntax
+set foldlevelstart=1
 set nofoldenable
 
 "Customize the status line to always show, and to
@@ -146,3 +149,7 @@ imap cll console.log();<Esc>==f(a
 vmap cll yocll<Esc>p
 " Console log from normal mode, inserted on next line with word your on inside parentheses
 nmap cll yiwocll<Esc>p 
+
+" Enable javascript folding as per this plugin https://github.com/jelera/vim-javascript-syntax
+" Tutorial here:http://vimcasts.org/episodes/how-to-fold/ 
+au FileType javascript call JavaScriptFold()
