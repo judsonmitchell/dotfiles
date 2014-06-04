@@ -155,30 +155,15 @@ nmap cll yiwocll<Esc>p
 " Tutorial here:http://vimcasts.org/episodes/how-to-fold/ 
 au FileType javascript call JavaScriptFold()
 
-" Enable Markdown folding http://stackoverflow.com/a/4677454/49359
-function! MarkdownLevel()
-    if getline(v:lnum) =~ '^# .*$'
-        return ">1"
-    endif
-    if getline(v:lnum) =~ '^## .*$'
-        return ">2"
-    endif
-    if getline(v:lnum) =~ '^### .*$'
-        return ">3"
-    endif
-    if getline(v:lnum) =~ '^#### .*$'
-        return ">4"
-    endif
-    if getline(v:lnum) =~ '^##### .*$'
-        return ">5"
-    endif
-    if getline(v:lnum) =~ '^###### .*$'
-        return ">6"
-    endif
-    return "=" 
-endfunction
-au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
-au BufEnter *.md setlocal foldmethod=expr  
+" Enable Markdown folding http://stackoverflow.com/a/3842504/49359
+au FileType markdown syn region myMkdHeaderFold
+        \ start="\v^\s*\z(\#{1,6})"
+        \ skip="\v(\n\s*\z1\#)\@="
+        \ end="\v\n(\s*\#)\@="ms=s-1,me=s-1
+        \ fold contains=myMkdHeaderFold
+
+au FileType markdown syn sync fromstart
+au FileType markdown set foldmethod=syntax
 
 " Enable paste toggling https://coderwall.com/p/if9mda
 set pastetoggle=<F2>
