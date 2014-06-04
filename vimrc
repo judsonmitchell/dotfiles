@@ -153,3 +153,28 @@ nmap cll yiwocll<Esc>p
 " Enable javascript folding as per this plugin https://github.com/jelera/vim-javascript-syntax
 " Tutorial here:http://vimcasts.org/episodes/how-to-fold/ 
 au FileType javascript call JavaScriptFold()
+
+" Enable Markdown folding http://stackoverflow.com/a/4677454/49359
+function! MarkdownLevel()
+    if getline(v:lnum) =~ '^# .*$'
+        return ">1"
+    endif
+    if getline(v:lnum) =~ '^## .*$'
+        return ">2"
+    endif
+    if getline(v:lnum) =~ '^### .*$'
+        return ">3"
+    endif
+    if getline(v:lnum) =~ '^#### .*$'
+        return ">4"
+    endif
+    if getline(v:lnum) =~ '^##### .*$'
+        return ">5"
+    endif
+    if getline(v:lnum) =~ '^###### .*$'
+        return ">6"
+    endif
+    return "=" 
+endfunction
+au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
+au BufEnter *.md setlocal foldmethod=expr  
