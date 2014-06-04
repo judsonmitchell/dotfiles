@@ -127,7 +127,7 @@ endif
 
 " Markdown to HTML  
 " See http://net.tutsplus.com/tutorials/other/vim-essential-plugin-markdown-to-html/
-nmap <leader>md :%!/usr/bin/Markdown.pl --html4tags <cr>
+nmap <leader>md :%!markdown --html4tags <cr>
 
 "Enable syntax highlighting of markdown files with.md extension http://stackoverflow.com/a/14779012/49359
 au BufRead,BufNewFile *.md set filetype=markdown
