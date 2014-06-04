@@ -168,3 +168,6 @@ au FileType markdown set foldmethod=syntax
 " Enable paste toggling https://coderwall.com/p/if9mda
 set pastetoggle=<F2>
 
+" Set foldmethod to indent for html files
+au FileType html setlocal foldmethod=indent
+
