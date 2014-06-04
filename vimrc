@@ -57,6 +57,7 @@ set smarttab
 set autoindent
 inoremap jj <ESC>
 
+
 "Alert for over 80 columns http://stackoverflow.com/a/235970/49359
 highlight OverLength ctermbg=gray ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
@@ -178,3 +179,7 @@ function! MarkdownLevel()
 endfunction
 au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
 au BufEnter *.md setlocal foldmethod=expr  
+
+" Enable paste toggling https://coderwall.com/p/if9mda
+set pastetoggle=<F2>
+
