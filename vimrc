@@ -23,6 +23,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'mileszs/ack.vim.git'
 Bundle 'ap/vim-css-color.git'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'junegunn/goyo.vim'
 
 set number
 set ic
@@ -170,4 +171,7 @@ set pastetoggle=<F2>
 
 " Set foldmethod to indent for html files
 au FileType html setlocal foldmethod=indent
+
+" Toggle Goyo for distraction-free writing
+nnoremap <Leader>G :Goyo<CR>
 
