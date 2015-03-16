@@ -24,6 +24,7 @@ Bundle 'mileszs/ack.vim.git'
 Bundle 'ap/vim-css-color.git'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'junegunn/goyo.vim'
+Bundle 'scrooloose/nerdcommenter.git'
 
 set number
 set ic
