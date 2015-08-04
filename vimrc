@@ -176,3 +176,7 @@ au FileType html setlocal foldmethod=indent
 " Toggle Goyo for distraction-free writing
 nnoremap <Leader>G :Goyo<CR>
 
+function! s:goyo_enter()
+    set textwidth =80
+endfunction
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
