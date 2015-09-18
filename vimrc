@@ -25,6 +25,7 @@ Bundle 'ap/vim-css-color.git'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'junegunn/goyo.vim'
 Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'vim-scripts/loremipsum'
 
 set number
 set ic
