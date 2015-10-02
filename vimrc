@@ -37,6 +37,8 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab
 set spell spelllang=en_us
+" set spell check automatically for md
+autocmd BufNewFile,BufRead *.md set spell
 
 "filetype indent on
 "filetype plugin on
@@ -159,15 +161,16 @@ nmap cll yiwocll<Esc>p
 " Tutorial here:http://vimcasts.org/episodes/how-to-fold/ 
 au FileType javascript call JavaScriptFold()
 
+" Note: the following breaks spellcheck.
 " Enable Markdown folding http://stackoverflow.com/a/3842504/49359
-au FileType markdown syn region myMkdHeaderFold
-        \ start="\v^\s*\z(\#{1,6})"
-        \ skip="\v(\n\s*\z1\#)\@="
-        \ end="\v\n(\s*\#)\@="ms=s-1,me=s-1
-        \ fold contains=myMkdHeaderFold
-
-au FileType markdown syn sync fromstart
-au FileType markdown set foldmethod=syntax
+"au FileType markdown syn region myMkdHeaderFold
+"        \ start="\v^\s*\z(\#{1,6})"
+"        \ skip="\v(\n\s*\z1\#)\@="
+"        \ end="\v\n(\s*\#)\@="ms=s-1,me=s-1
+"        \ fold contains=myMkdHeaderFold
+"
+"au FileType markdown syn sync fromstart
+"au FileType markdown set foldmethod=syntax
 
 " Enable paste toggling https://coderwall.com/p/if9mda
 set pastetoggle=<F2>
