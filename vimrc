@@ -36,7 +36,7 @@ set softtabstop=4         " unify
 set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab
-set spell spellang=en_us
+set spell spelllang=en_us
 
 "filetype indent on
 "filetype plugin on
