@@ -37,8 +37,9 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab
 set spell spelllang=en_us
-" set spell check automatically for md
+" set spell check and auto-formatting  md
 autocmd BufNewFile,BufRead *.md set spell
+autocmd BufNewFile,BufRead *.md set fo+=a 
 
 "filetype indent on
 "filetype plugin on
