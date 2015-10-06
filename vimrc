@@ -38,8 +38,9 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab
 set spell spelllang=en_us
 " set spell check and auto-formatting  md
-autocmd BufNewFile,BufRead *.md set spell
-autocmd BufNewFile,BufRead *.md set fo+=a 
+autocmd BufNewFile,BufRead *.md set spell 
+autocmd BufNewFile,BufRead *.md set fo=anw 
+
 
 "filetype indent on
 "filetype plugin on
